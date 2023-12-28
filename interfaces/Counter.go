@@ -1,5 +1,7 @@
 package interfaces
 
+// look out for empty interfaces in go
+
 import "fmt"
 
 type Counter interface {

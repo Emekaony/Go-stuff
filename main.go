@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"fundamentals/structs"
+	"fundamentals/using_stringers"
 )
 
 func main() {
-	person1 := structs.NewPerson("Nnaemeka", "Onyeokoro", 22)
-	fmt.Printf("Your name is %s\n", person1.GetFirstName())
+	using_stringers.Run()
 }

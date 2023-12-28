@@ -1,5 +1,7 @@
 package structs
 
+import "fmt"
+
 type Person struct {
 	firstname string
 	lastname  string
@@ -18,6 +20,10 @@ func (p *Person) SetAge(age int) {
 
 func (p *Person) GetFirstName() string {
 	return p.firstname
+}
+
+func (p *Person) SayHello() {
+	fmt.Println("Hello there, my name is ", p.firstname, ", ", p.lastname)
 }
 
 // this is how u implement the constructor method for the Person type
