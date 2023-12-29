@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fundamentals/using_stringers"
+	"fundamentals/type_conversions"
 )
 
 func main() {
-	using_stringers.Run()
+	type_conversions.Example()
 }
