@@ -36,4 +36,16 @@ func Example() {
 	var t uint = 22
 	fmt.Printf("The type of %v is %s\n", ss, reflect.TypeOf(s))
 	fmt.Printf("The type of %v is %s\n", t, reflect.TypeOf(t))
+
+	// type switches
+	var kk interface{} = map[string]int{}
+
+	switch v := kk.(type) {
+	case int:
+		fmt.Printf("the integer %d\n", v)
+	case string:
+		fmt.Printf("the string %s\n", v)
+	default:
+		fmt.Printf("type, %T, not handled explicitly: %#v\n", v, v)
+	}
 }

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fundamentals/type_conversions"
+	"fundamentals/functions"
 )
 
 func main() {
-	type_conversions.Example()
+	functions.Run()
 }
