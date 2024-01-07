@@ -1,9 +1,7 @@
 package main
 
-import (
-	"fundamentals/functions"
-)
+import "fundamentals/using_arrays"
 
 func main() {
-	functions.Run()
+	using_arrays.Run()
 }

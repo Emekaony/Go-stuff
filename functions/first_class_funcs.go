@@ -8,7 +8,7 @@ func FirstGreeting(name string) string {
 }
 
 func SecondGreeting(name string) string {
-	message := fmt.Sprintf("Hello %s, how are you douing?", name)
+	message := fmt.Sprintf("Hello %s, how are you doing?", name)
 	return message
 }
 
