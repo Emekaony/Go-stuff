@@ -43,12 +43,13 @@ func mat_mul(mat1, mat2 [][]int) [][]int {
 
 func Run() {
 	a := [][]int{
-		{7, 6},
-		{5, 9},
+		{1, 2, 3},
+		{4, 5, 6},
 	}
 	b := [][]int{
-		{5, 6},
-		{7, 8},
+		{2, 4},
+		{1, 3},
+		{0, 5},
 	}
 	result := mat_mul(a, b)
 	fmt.Println("result is ", result)
