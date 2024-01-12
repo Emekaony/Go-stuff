@@ -1,16 +1,27 @@
 package concurrency
 
-import "time"
+import (
+	"fmt"
+)
 
-func sum(numbers ...int) {
+func sum(numbers []int, ch chan int) {
 	var sum int
 	for i := 0; i < len(numbers); i++ {
 		sum += numbers[i]
 	}
-	println(sum)
+	ch <- sum
 }
 
 func Run() {
-	go sum([]int{1, 2, 3, 4}...)
-	time.Sleep(100 * time.Millisecond) // let the main thread sleep for a hundres milliseconds
+	nums := []int{1, 2, 3, 4}
+
+	// we must use the make built-in for channel initialization
+	ch := make(chan int)
+
+	go sum(nums, ch)
+
+	// this is blocking
+	result := <-ch
+
+	fmt.Println("Result is:", result)
 }
