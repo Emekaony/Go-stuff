@@ -2,7 +2,9 @@ package interfaces
 
 // look out for empty interfaces in go
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Counter interface {
 	Add(increment int)

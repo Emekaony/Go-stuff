@@ -1,7 +1,9 @@
 package main
 
-import "fundamentals/interfaces"
+import (
+	"fundamentals/concurrency"
+)
 
 func main() {
-	interfaces.Run()
+	concurrency.Run()
 }
