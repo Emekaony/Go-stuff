@@ -7,5 +7,6 @@ import (
 
 func main() {
 	// networking.Run()
-	using_strings.Run()
+	// using_strings.Run()
+	using_strings.UseMapFunc()
 }
