@@ -18,7 +18,7 @@ func Run() {
 	}
 
 	// define the URL for the request
-	var URL string = "https://jsonplaceholder.typicode.com/posts/1"
+	var URL string = "https://jsonplaceholder.typicode.com/posts/4"
 
 	// create the GET request
 	req, err := http.NewRequest(http.MethodGet, URL, nil)
