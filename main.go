@@ -1,9 +1,11 @@
 package main
 
 import (
-	"fundamentals/concurrency"
+	// "fundamentals/networking"
+	"fundamentals/using_strings"
 )
 
 func main() {
-	concurrency.Run()
+	// networking.Run()
+	using_strings.Run()
 }
