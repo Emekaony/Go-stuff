@@ -36,13 +36,4 @@ func Run() {
 
 	// print out the response body
 	fmt.Println("Response body: ", string(body))
-	fmt.Println("======")
-	// print out the response status code
-	fmt.Println("Response Status Code: ", res.StatusCode)
-	fmt.Println("======")
-	// print out the response headers
-	fmt.Println("Response Headers")
-	for k, v := range res.Header {
-		fmt.Println(k, " : ", v)
-	}
 }
