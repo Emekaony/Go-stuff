@@ -1,12 +1,10 @@
 package main
 
-import (
-	"fundamentals/networking"
-	"fundamentals/using_strings"
-)
+import "fmt"
 
 func main() {
-	networking.Run()
-	// using_strings.Run()
-	using_strings.UseMapFunc()
+	// s := "emeka"
+	// fmt.Println(rune(s[0]))
+	j := []byte{101, 109, 101, 107, 97} // this is a byte representing the unicode code point for each rune.
+	fmt.Println(string(j))
 }
