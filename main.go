@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	// s := "emeka"
-	// fmt.Println(rune(s[0]))
-	j := []byte{101, 109, 101, 107, 97} // this is a byte representing the unicode code point for each rune.
-	fmt.Println(string(j))
+	arr := []int{}
+	arr2 := make([]int, len(arr)) // so we make a slice with the same length as the first array
+	arr2 = append(arr2, []int{88, 99, 100}...)
+	num := copy(arr2, arr) // now we copy the stuff from arr into arr2
+	fmt.Println(arr2, num)
 }
