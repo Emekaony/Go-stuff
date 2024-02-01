@@ -1,8 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fundamentals/concurrency"
+)
 
 func main() {
-	arr := [...]int{1, 2, 3}
-	fmt.Println(arr)
+	concurrency.Run()
 }
